@@ -1,4 +1,5 @@
 ﻿using System;
+using ValidationProject.Abstracts;
 using ValidationProject.Interfaces;
 using ValidationProject.ValidationSteps;
 
@@ -10,6 +11,9 @@ namespace ValidationProject
         {
             IValidationStep Step = new WorldValidation();
             IValidationStep Step2 = new PolandValidation();
+
+            // abstract
+            //ValidationConfiguration validation = new ValidationConfiguration();
 
             Console.WriteLine(Step.Validate());
             Console.WriteLine(Step2.Validate());
