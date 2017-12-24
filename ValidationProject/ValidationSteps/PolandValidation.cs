@@ -6,7 +6,7 @@ namespace ValidationProject.ValidationSteps
     {
         public bool Validate()
         {
-            return false;
+            return true;
         }
     }
 }
