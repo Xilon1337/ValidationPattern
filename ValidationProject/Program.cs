@@ -14,14 +14,6 @@ namespace ValidationProject
             PrimaryValidationConfigurator validation = new PrimaryValidationConfigurator();
             validation.Register();
             Console.WriteLine(validation.Validate());
-
-
-            Console.WriteLine();
-            List<bool> lista = new List<bool>() { true, false, false };
-
-            var xa = lista.Any(x => x == true);
-
-            Console.WriteLine(xa);
         }
     }
 }
